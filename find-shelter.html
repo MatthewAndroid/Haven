@@ -3,76 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haven</title>
+    <title>Find a Shelter Near You - The Haven</title>
 </head>
 <body>
-<header>
-    <nav>
-        <div class="logo">
-            <h2>The Haven</h2>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="find-shelter.html">Find Shelter</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="stories.html">Stories</a></li>
-        </ul>
-        <a href="#donate" class="donate-btn">Donate Now</a>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>The Haven</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="find-shelter.html">Find Shelter</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="stories.html">Stories</a></li>
+            </ul>
+            <a href="#donate" class="donate-btn">Donate Now</a>
+        </nav>
+    </header>
 
-<main>
-    <section class="page-header">
-        <h1>Find a Shelter Near You</h1>
-        <p>Locate available shelter beds and services in real-time. All locations provide meals, safety, and support services.</p>
-    </section>
+    <main>
+        <section class="page-header">
+            <h1>Find a Shelter Near You</h1>
+            <p>Locate available shelter beds and services in real-time. All locations provide meals, safety, and support services.</p>
+        </section>
 
-    <section class="shelter-finder">
-        <div class="map-container">
-            <div class="interactive-map">
-                <div class="map-placeholder">
-                    <div class="icon">📍</div>
-                    <h3>Interactive Map</h3>
-                    <p>Real-time shelter locations and availability</p>
+        <section class="shelter-finder">
+            <div class="map-container">
+                <div class="interactive-map">
+                    <div class="map-placeholder">
+                        <div class="icon">
+                            <img src="images/map-pin.svg" alt="Map pin icon" width="48" height="48">
+                        </div>
+                        <h3>Interactive Map</h3>
+                        <p>Real-time shelter locations and availability</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="shelter-info">
-            <div class="shelter-location">
-                <h3>Downtown Haven</h3>
-
-                <div class="location-details">
-                    <div class="detail-item">
-                        <span class="icon">📍</span>
-                        <span>123 Main St, Downtown</span>
+            <div class="shelter-info">
+                <div class="shelter-location">
+                    <h3>Downtown Haven</h3>
+                    
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <span class="icon">
+                                <img src="images/map-pin.svg" alt="Location icon" width="16" height="16">
+                            </span>
+                            <span>123 Main St, Downtown</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="icon">
+                                <img src="images/phone.svg" alt="Phone icon" width="16" height="16">
+                            </span>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="icon">
+                                <img src="images/clock-4.svg" alt="Clock icon" width="16" height="16">
+                            </span>
+                            <span>24/7</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="icon">
+                                <img src="images/bed.svg" alt="Bed icon" width="16" height="16">
+                            </span>
+                            <span>50 beds</span>
+                        </div>
                     </div>
-
-                    <div class="detail-item">
-                        <span class="icon">📞</span>
-                        <span>(555) 123-4567</span>
+                    
+                    <div class="availability">
+                        <strong>Available Now: 15 beds available</strong>
                     </div>
-
-                    <div class="detail-item">
-                        <span class="icon">🕒</span>
-                        <span>24/7</span>
-                    </div>
-
-                    <div class="detail-item">
-                        <span class="icon">🛏️</span>
-                        <span>50 beds</span>
-                    </div>
+                    
+                    <button>Get Directions</button>
                 </div>
-
-                <div class="availability">
-                    <strong>Available Now: 15 beds available</strong>
-                </div>
-
-                <button>Get Directions</button>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 </body>
 </html>
