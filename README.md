@@ -4,7 +4,7 @@
 **The Haven Website** - A comprehensive web platform for a homeless shelter organization providing emergency shelter, meals, and support services. (A simpler rework of the existing Haven.org.za site.
 
 ## Student Information
-- **Student Name:** Matthew Mayman
+- **Name:** Matthew Mayman
 - **Student ID:** ST10469301
 
 ## Project Overview 
