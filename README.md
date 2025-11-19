@@ -60,6 +60,10 @@ The Haven is a responsive, multi-page website designed for a homeless shelter or
 - Three client success stories with testimonials
 - Embedded impact video from YouTube
 
+### 6. Contact Page (contact.html)
+- Can create query and sends it to our email
+
+
 ### Technical Features
 - **Semantic HTML5:** Proper document structure and accessibility
 - **Responsive Design Ready:** Mobile-first approach preparation
@@ -88,20 +92,20 @@ The Haven is a responsive, multi-page website designed for a homeless shelter or
 - [x] Video embedding and media integration
 - [x] Icon implementation with local SVG files
 - [x] Cross-page linking and navigation testing
-- [ ] CSS styling
+- [x] CSS styling
 
 ### Phase 4: Testing and Optimization (Week 6)
-- [ ] Cross-browser compatibility testing
-- [ ] Mobile responsiveness validation
-- [ ] Accessibility compliance checking
-- [ ] Performance optimization
-- [ ] Form functionality testing
+- [x] Cross-browser compatibility testing
+- [x] Mobile responsiveness validation
+- [x] Accessibility compliance checking
+- [x] Performance optimization
+- [x] Form functionality testing
 
 ### Phase 5: Documentation and Deployment (Week 7)
 - [x] README documentation completion
-- [ ] Code commenting and documentation
-- [ ] Deployment preparation
-- [ ] Final testing and quality assurance
+- [x] Code commenting and documentation
+- [x] Deployment preparation
+- [x] Final testing and quality assurance
 
 ## Sitemap
 
@@ -123,6 +127,8 @@ The Haven Website
 │   ├── Volunteer Opportunities
 │   ├── Application Form
 │   └── Interest Categories
+├── Contact (contact.html)
+│   ├── Query Form
 └── Stories (stories.html)
     ├── Client Testimonials
     ├── Success Stories
@@ -144,26 +150,15 @@ The Haven Website
 - Forms created with proper accessibility features
 - Cross-page linking and navigation completed
 
+### Part 3
+**Date:** 2025/11/19
+**Changes:**
+- Added SEO
+- Added Contact Page
+- Added interactive map in Shelter page
+- Added FormSpree to send emails
 
-## File Structure
-```
-the-haven/
-├── index.html              # Homepage
-├── about.html              # About page
-├── find-shelter.html       # Shelter finder
-├── volunteer.html          # Volunteer opportunities
-├── stories.html            # Success stories
-├── README.md              # Project documentation
-└── images/                # Icon assets and Images 
-    ├── bed.svg
-    ├── clock-4.svg
-    ├── heart.svg
-    ├── map-pin.svg
-    ├── phone.svg
-    ├── shield.svg
-    ├── target.svg
-    └── users.svg
-```
+
 
 ## References
 
