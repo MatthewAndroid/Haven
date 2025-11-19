@@ -24,38 +24,51 @@
 }
 
 
-.map-placeholder {
+.map-container {
     background: #e5e7eb;
     border-radius: 0.75rem;
-    height: 24rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #6b7280;
-    text-align: center;
-}
-.map-placeholder .icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: #3b82f6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    color: #fff;
-}
-.map-placeholder h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #374151;
-}
-.map-placeholder p {
-    font-size: 0.875rem;
-    color: #6b7280;
+    height: 600px;
+    overflow: hidden;
 }
 
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.shelter-info {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.shelter-location:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.shelter-location.active {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.detail-item .label {
+    font-weight: 600;
+    min-width: 60px;
+    color: #374151;
+    margin-right: 0.5rem;
+}
+
+.popup-content h4 {
+    margin: 0 0 0.5rem 0;
+    color: #111827;
+    font-size: 1rem;
+}
+
+.popup-content p {
+    margin: 0.25rem 0;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
 .shelter-location {
     background: #fff;
     border: 1px solid #e5e7eb;

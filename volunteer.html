@@ -37,15 +37,15 @@
                 <div class="opportunity">
                     <div class="opportunity-header">
                         <div class="icon">
-                    <img src="images/utensils.svg" alt="Utensils icon" width="24" height="24">
-                </div>
+                            <img src="images/utensils.svg" alt="Utensils icon" width="24" height="24">
+                        </div>
                         <h3>Meal Service</h3>
                     </div>
                     <p>Help prepare and serve meals to shelter guests</p>
                     <div class="schedule-info">
                         <div class="icon">
-                    <img src="images/clock-4.svg" alt="Clock icon" width="24" height="24">
-                </div>
+                            <img src="images/clock-4.svg" alt="Clock icon" width="24" height="24">
+                        </div>
                         <span>Evening shifts, 2-4 hours</span>
                     </div>
                     <div class="frequency">Weekly</div>
@@ -54,15 +54,15 @@
                 <div class="opportunity">
                     <div class="opportunity-header">
                         <div class="icon">
-                    <img src="images/brush-cleaning.svg" alt="Cleaning icon" width="24" height="24">
-                </div>
+                            <img src="images/brush-cleaning.svg" alt="Cleaning icon" width="24" height="24">
+                        </div>
                         <h3>Clean</h3>
                     </div>
                     <p>Assist with cleaning</p>
                     <div class="schedule-info">
                         <div class="icon">
-                    <img src="images/clock-4.svg" alt="Clock icon" width="24" height="24">
-                </div>
+                            <img src="images/clock-4.svg" alt="Clock icon" width="24" height="24">
+                        </div>
                         <span>Various shifts available</span>
                     </div>
                     <div class="frequency">Flexible</div>
@@ -72,38 +72,66 @@
             <div class="volunteer-form">
                 <h2>Sign Up to Volunteer</h2>
                 
-                <form>
+                <!-- Alert messages -->
+                <div id="alertMessage" class="alert" style="display: none;"></div>
+                
+                <form id="volunteerForm">
                     <div class="form-row">
-                        <input type="text" placeholder="First Name" required>
-                        <input type="text" placeholder="Last Name" required>
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                            <span class="error-message"></span>
+                        </div>
                     </div>
                     
-                    <input type="email" placeholder="Email Address" required>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <span class="error-message"></span>
+                    </div>
                     
-                    <input type="tel" placeholder="Phone Number" required>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        <span class="error-message"></span>
+                    </div>
                     
                     <fieldset>
                         <legend>Areas of Interest</legend>
-                        <label>
-                            <input type="checkbox" name="interest" value="meal-service">
-                            Meal Service
-                        </label>
-                        <label>
-                            <input type="checkbox" name="interest" value="cleaning">
-                            Cleaning
-                        </label>
-                        <label>
-                            <input type="checkbox" name="interest" value="special-events">
-                            Special Events
-                        </label>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="interest" value="meal-service">
+                                Meal Service
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interest" value="cleaning">
+                                Cleaning
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interest" value="special-events">
+                                Special Events
+                            </label>
+                            <span class="error-message"></span>
+                        </div>
                     </fieldset>
                     
-                    <textarea placeholder="Tell us about your availability and any relevant experience..." rows="4"></textarea>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your availability and any relevant experience..." rows="4"></textarea>
+                        <span class="error-message"></span>
+                    </div>
                     
-                    <button type="submit">Submit Application</button>
+                    <button type="submit" id="submitBtn">
+                        <span class="btn-text">Submit Application</span>
+                        <span class="btn-loader" style="display: none;">
+                            <span class="loader"></span> Submitting...
+                        </span>
+                    </button>
                 </form>
             </div>
         </section>
     </main>
+
+    <script src="js/volunteer.js"></script>
 </body>
 </html>
