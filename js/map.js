@@ -4,31 +4,31 @@ const shelters = [
         address: "2 South Street, Bellville",
         phone: "021 94 51 413",
         email: "bellville@haven.org.za",
-        lat: -33.8991,
-        lng: 18.6287
+        lat: -33.90470689686256,
+        lng: 18.623793202124478
     },
     {
         name: "The Haven Ceres",
         address: "1 Owen Street, Ceres",
         phone: "023 312 15 78",
         email: "ceres@haven.org.za",
-        lat: -33.3666,
-        lng: 19.3089
+        lat: -33.371238263653495, 
+        lng: 19.30769200373999
     },
     {
         name: "The Haven Claremont",
         address: "5 Fir Street, Claremont",
         phone: "021 7616219",
         email: "claremont@haven.org.za",
-        lat: -33.9817,
-        lng: 18.4646
+        lat: -33.97653436398997, 
+        lng: 18.4666737232725
     },
     {
         name: "The Haven District Six",
         address: "20 Selkirk Street, 8001 Cape Town",
         phone: "021 465 1310",
         email: "district6@haven.org.za",
-        lat: -33.9304,
+        lat: -33.92788323827222, 
         lng: 18.4333
     },
     {
@@ -36,16 +36,16 @@ const shelters = [
         address: "24 Dublin Street, Woodstock, Cape Town",
         phone: "021 447 7422",
         email: "allie@haven.org.za",
-        lat: -33.9341,
-        lng: 18.4387
+        lat: -33.92625979216244, 
+        lng: 18.452941129028066
     },
     {
         name: "The Haven Kalk Bay",
         address: "139 Main Road, 7975 Kalk Bay",
         phone: "021 788 5820",
         email: "kalkbay@haven.org.za",
-        lat: -34.1281,
-        lng: 18.4491
+        lat: -34.1230260353558, 
+        lng: 18.44645603058997
     },
     {
         name: "The Haven Kensington",
