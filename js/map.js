@@ -148,7 +148,6 @@ shelters.forEach((shelter, index) => {
     markers.push({ marker, shelter, index });
 });
 
-// Create shelter list
 const shelterList = document.getElementById('shelterList');
 
 shelters.forEach((shelter, index) => {
@@ -183,7 +182,6 @@ shelters.forEach((shelter, index) => {
     shelterList.appendChild(card);
 });
 
-// Sync marker clicks with shelter cards
 markers.forEach(({ marker, index }) => {
     marker.on('click', () => {
         document.querySelectorAll('.shelter-location').forEach(c => c.classList.remove('active'));

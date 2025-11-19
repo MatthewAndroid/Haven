@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The Haven with questions about shelter services, volunteering, donations, or partnerships. Get in touch with our team today.">
+    <meta name="keywords" content="contact us, inquiries, shelter services, volunteer questions, donations, partnerships, The Haven">
+    <meta name="author" content="The Haven">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.thehaven.org/contact.html">
+    <title>Contact The Haven - Get in Touch | Questions & Support</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>The Haven</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="find-shelter.html">Find Shelter</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#donate" class="donate-btn">Donate Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>Have questions? Get in touch with our team. We're here to help.</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                
+                <!-- Alert messages -->
+                <div id="alertMessage" class="alert" style="display: none;"></div>
+                
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number (Optional)">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="queryType" name="queryType" required>
+                            <option value="">Select Query Type</option>
+                            <option value="general-inquiry">General Inquiry</option>
+                            <option value="volunteer-question">Volunteer Question</option>
+                            <option value="donation-info">Donation Information</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us your question or comment..." rows="5" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;">
+                            <span class="loader"></span> Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>

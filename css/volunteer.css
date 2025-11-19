@@ -275,7 +275,6 @@
     margin-bottom: 0;
 }
 
-/* Error Messages */
 .error-message {
     display: block;
     color: #dc2626;
@@ -294,7 +293,6 @@
     box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
-/* Loading State */
 .btn-loader {
     display: flex;
     align-items: center;
