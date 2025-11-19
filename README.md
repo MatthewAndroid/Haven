@@ -155,6 +155,7 @@ The Haven Website
 **Changes:**
 - Added SEO
 - Added Contact Page
+- Added interactive map in Shelter page
 - Added FormSpree to send emails
 
 
