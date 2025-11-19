@@ -126,18 +126,18 @@ document.addEventListener('DOMContentLoaded', function() {
         btnLoader.style.display = 'flex';
         
         try {
-            // Prepare data for submission
+            // Prepare data for Formspree
             const data = {
                 firstName: formData.get('firstName'),
                 lastName: formData.get('lastName'),
                 email: formData.get('email'),
                 phone: formData.get('phone'),
-                interests: formData.getAll('interest'),
+                interests: formData.getAll('interest').join(', '),
                 message: formData.get('message')
             };
             
-            // Make AJAX request
-            const response = await fetch('submit-volunteer.php', {
+            // Make request to Formspree
+            const response = await fetch('https://formspree.io/f/mblwyyrp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -145,21 +145,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 body: JSON.stringify(data)
             });
             
-            const result = await response.json();
-            
-            if (response.ok && result.success) {
+            if (response.ok) {
                 // Success
                 showAlert('Thank you for signing up! We will contact you soon.', 'success');
                 form.reset();
             } else {
-                // Server returned an error
-                throw new Error(result.message || 'Submission failed');
+                throw new Error('Submission failed');
             }
             
         } catch (error) {
             console.error('Error:', error);
             showAlert(
-                error.message || 'There was an error submitting your application. Please try again later.',
+                'There was an error submitting your application. Please try again later.',
                 'error'
             );
         } finally {
